@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #010165;
+}
+
+.game-container {
+    columns: 2;
+}
+
+.title-container {
+    min-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.door-container {
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Header */
+header {
+    background-color: seashell;
+    text-align: center;
+}
+
+header img {
+    padding: 0.5rem;
+}
+
+.title-row {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.instructions-title {
+    display: inline;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    color: seashell;
+}
+
+.instructions-row {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.instructions-number {
+    padding-right: 25px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    color: #0ff;
+}
+
+.instructions-text {
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Main */
+.door-row {
+    text-align: center;
+    width: 100%;
+}
+
+.door-frame {
+    cursor: pointer;
+    padding: 0.6rem;
+    width: 25%;
+}
+
+/* Status */
+.start-row {
+    margin: 1rem auto;
+    text-align: center;
+    height: 2rem;
+    width: 30%;
+    border-radius: 3rem;
+    font-family: 'Work Sans', sans-serif;
+    background-color: seashell;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    cursor: default;
+}
+
+.streak-container {
+    position: relative;
+    left: 1.5rem;
+    top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #010165;
+    font-family: 'Work Sans', sans-serif;
+    width: 80%;
+    margin: 0.5rem;
+}
+
+.curr-streak {
+    padding: 0.5rem 1rem;
+    background-color: seashell;
+    border-radius: 4rem;
+    margin: 1rem;
+}
+
+.high-streak {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: seashell;
+    border-radius: 4rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .game-container {
+        columns: 1;
+    }
+
+    .title-container {
+        min-height: 0;
+        margin: 1.3rem 0;
+        position: static;
+    }
+
+    .door-container {
+        min-height: 0;
+        position: static;
+    }
+
+    .start-row {
+        width: 80%;
+    }
+
+    .streak-container {
+        position: static;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #010165;
+        font-family: 'Work Sans', sans-serif;
+        width: 90%;
+    }
+
+    @media only screen and (max-width: 320px) {
+        html {
+            font-size: 12px;
+        }
+    }

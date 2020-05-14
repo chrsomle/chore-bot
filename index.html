@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chore Door</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/logo.svg" alt="logo">
+    </header>
+    <div class="game-container">
+        <div class="title-container">
+            <!-- Title -->
+            <div class="title-row">
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg" alt="star">
+                <p class="instructions-title">Instructions</p>
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg" alt="star">
+            </div>
+            <!-- Instructions -->
+            <table class="instructions-row">
+                <tr>
+                    <td class="instructions-number">1</td>
+                    <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
+                </tr>
+                <tr>
+                    <td class="instructions-number">2</td>
+                    <td class="instructions-text">Your mission is to open all of the doors without running into the
+                        ChoreBot.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="instructions-number">3</td>
+                    <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door,
+                        you
+                        win!</td>
+                </tr>
+                <tr>
+                    <td class="instructions-number">4</td>
+                    <td class="instructions-text">See if you can score a winning streak!</td>
+                </tr>
+            </table>
+            <!-- Streaks -->
+            <div class="streak-container">
+                <div class="curr-streak">Current Streak: 0</div>
+                <div class="high-streak">Highest Streak: 0</div>
+            </div>
+        </div>
+        <div class="door-container">
+            <!-- Game -->
+            <div class="door-row">
+                <img class="door-frame" id="door1"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+                <img class="door-frame" id="door2"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+                <img class="door-frame" id="door3"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
+            </div>
+            <!-- Status -->
+            <div class="start-row">
+                Good Luck!
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
